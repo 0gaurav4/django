@@ -1,0 +1,9 @@
+{% if pages %}
+  <ul>
+    {% for page in pages %}
+      <li><a href="{% url 'page' title=page.title %}">{{ page.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No pages available.</p>
+{% endif %}

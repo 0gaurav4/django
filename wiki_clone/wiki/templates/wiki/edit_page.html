@@ -1,0 +1,6 @@
+<h1>Edit: {{ page.title }}</h1>
+<form method="POST" action="{% url 'save_page' title=page.title %}">
+  {% csrf_token %}
+  <textarea name="content" rows="10" cols="50">{{ page.content }}</textarea><br>
+  <input type="submit" value="Save">
+</form>
