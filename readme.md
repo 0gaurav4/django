@@ -10,3 +10,5 @@
 - settings.py contains some important configuration settings for our new project. There are some default settings, but we may wish to change some of them from time to time.
 - urls.py contains directions for where users should be routed after navigating to a certain URL.
 4. Start the project by running <code> python manage.py runserver </code> .This will open a development server, which you can access by visiting the URL provided. This development server is being run locally on your machine, meaning other people cannot access your website. This should bring you to a default landing page:
+
+python manage.py startapp APP_NAME.
